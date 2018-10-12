@@ -1,11 +1,9 @@
 html {
-  font-size: 10px;
-  /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
   font-family: 'Nunito', sans-serif;
   background-color: #ffffff;
   line-height: 2;
-  letter-spacing: 1px;
-  /* this should be the rest of the output you got from Google fonts */
+  letter-spacing: 1px;/* this should be the rest of the output you got from Google fonts */
 }
 
 body {
@@ -15,15 +13,17 @@ body {
   background-color: #ffffff;
   padding: 0;
   padding-bottom: 0;
+
 }
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+
 }
 
 ul.topnav li {
@@ -31,13 +31,13 @@ ul.topnav li {
 }
 
 ul.topnav li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -45,7 +45,7 @@ ul.topnav li a:hover:not(.active) {
 }
 
 ul.topnav li a.active {
-  color: white;
+  color:white;
   background-color: #ffbf00;
 }
 
@@ -53,13 +53,13 @@ ul.topnav li.right {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
-
-  ul.topnav li.right,
-  ul.topnav li {
-    float: none;
-  }
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
 }
+
+
+
 
 h1 {
   margin: 50px;
@@ -82,152 +82,161 @@ h1 {
   vertical-align: middle;
 }
 
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%;
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
+
 .hiddenelement1 {
-  display: none
+  display:none
 }
 
 /* Style the header */
 header {
-  background-color: #f3f3f3;
-  height: 80px;
-  padding: 5px auto;
-  text-align: center;
-  font-size: 1.25vw;
-  color: #666;
-  margin-top: 40px;
+    background-color: #f3f3f3;
+    height:80px;
+    padding: 5px auto;
+    text-align: center;
+    font-size: 1.25vw;
+    color: #666;
+    margin-top: 40px;
 }
 
 /* Create two columns/boxes that floats next to each other */
-section div {
-  float: left;
-  width: 30%;
-  height: auto;
-  /* only for demonstration, should be removed */
-  background: white;
-  padding: 30px;
-  align-content: center;
-  align-items: center;
-  text-align: center;
+nav {
+    float: left;
+    width: 30%;
+    height: auto; /* only for demonstration, should be removed */
+    background: white;
+    padding: 30px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 /* Style the list inside the menu */
-section div img {
-  padding: 12px;
+nav img {
+    padding: 12px;
 }
 
 article {
-  float: left;
-  padding: 30px 70px;
-  width: 70%;
-  background-color: white;
-  height: auto;
-  font-size: 1.2vw;
-  /* only for demonstration, should be removed */
+    float: left;
+    padding: 30px 70px;
+    width: 70%;
+    background-color: white;
+    height: auto;
+    font-size: 1.2vw; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
 section:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
+
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  section div, article {
-    width: 100%;
-    height: auto;
-  }
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
 }
+
+
 
 .contactme p a {
-  display: block;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  margin: 40px auto;
+        display:block;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        margin:40px auto;
 }
 
+
 a.button {
-  width: 300px;
-  border: 0;
-  border-radius: 5px;
-  background-color: #ffbf00;
-  font-size: 1.6vw;
-  display: block;
-  color: white;
-  text-align: center;
+        width:300px;
+        border:0;
+        border-radius:5px;
+        background-color: #ffbf00;
+        font-size:1.6vw;
+        display:block;
+        color: white;
+        text-align: center;
 }
 
 @media(max-width: 600px) {
   a.button {
-    width: 30%;
-    height: auto;
-  }
+        width:30%;
+        height: auto;
+      }
 }
 
+
+
 .footer {
-  position: relative;
-  margin: 0;
-  margin-top: 30px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  height: 100px;
-  background-color: #f3f3f3;
-  color: #666;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  border-bottom-style: solid;
-  border-bottom-width: 25px;
-  border-bottom-color: #fafafa;
+   position: relative;
+   margin: 0;
+   margin-top: 30px;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   width: auto;
+   height:100px;
+   background-color: #f3f3f3;
+   color: #666;
+   text-align: center;
+   align-content: center;
+   align-items: center;
+   border-bottom-style: solid;
+   border-bottom-width: 25px;
+   border-bottom-color: #fafafa;
 }
+
 
 .footer img {
   margin: 20px auto 35px;
+
 }
